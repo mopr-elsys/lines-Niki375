@@ -38,11 +38,10 @@ struct Line {
         if(p1.x - p2.x == 0) {
             return 0;
         }
-        
+
         B = -1;  
         A = (p1.y - p2.y) / (p1.x - p2.x); // ? p1.x == p2.x 
-        C = p1.y - A * p1.x;
-        return 
+        C = p1.y - A * p1.x; 
     }
 
     bool parallel(const Line& other) const {
