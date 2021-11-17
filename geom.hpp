@@ -34,8 +34,8 @@ struct Line {
     Line(double A = 0, double B = 0, double C = 0) : A(A), B(B), C(C) {}
 
     Line(const Point& p1, const Point& p2) {
-        double x1 = p1.x, y1 = p1.yl;
-        double x2 = p2.x, y2 = p2.y2;
+        double x1 = p1.x, y1 = p1.y;
+        double x2 = p2.x, y2 = p2.y;
         
         A = (y2 - y1) / (x2 - x1);
         B = -1;  
